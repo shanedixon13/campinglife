@@ -1,0 +1,28 @@
+.item {
+	border: 2px solid grey;
+	background-color: rgba(165, 42, 42, 0.603);
+	color: white;
+	width: 250px;
+	border-radius: 4px;
+	padding: 15px;
+	overflow: hidden;
+}
+.item .image-container {
+	display: flex;
+	border-radius: 4px;
+	height: 230px;
+	width: 240px;
+	overflow: hidden;
+}
+.item img {
+	display: flex;
+	width: 220px;
+	margin-bottom: 0.5rem;
+}
+.btn {
+	margin-top: 1rem;
+}
+.controls {
+	display: flex;
+	flex-direction: column-reverse;
+}

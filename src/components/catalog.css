@@ -1,0 +1,42 @@
+body {
+	background-image: url("./css_backgrounds/catalog-background.jpg");
+	background-size: cover;
+}
+.filters {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(172, 141, 102);
+	width: fit-content;
+	padding: 0.3rem;
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-content: center;
+	border-radius: 15px;
+}
+.filters .btn-sm {
+	display: flex;
+	background-color: rgba(165, 42, 42, 0.596);
+	color: white;
+	border: none;
+	margin-right: 0.15rem;
+	margin-left: 0.15rem;
+	margin-top: 0.15rem;
+	border-radius: 15px;
+}
+.items {
+	display: flex;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: tan;
+	border: 40px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 0.5rem;
+}
+.items .item {
+	margin: 0.2rem;
+}

@@ -1,0 +1,23 @@
+.cart-page {
+	margin-top: 3rem;
+}
+.cart-main {
+	display: flex;
+	margin-top: 3rem;
+	justify-content: center;
+}
+.cart-items {
+	border: 2px solid red;
+	width: 600px;
+	height: 500px;
+}
+.cart-checkout {
+	border: 2px solid red;
+	width: 600px;
+	height: 500px;
+}
+.coupon-form {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}

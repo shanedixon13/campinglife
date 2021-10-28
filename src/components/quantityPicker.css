@@ -1,0 +1,12 @@
+.quantity-picker {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+.quantity-picker label {
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	align-self: center;
+	padding-top: 1rem;
+	font-size: 1.2rem;
+}

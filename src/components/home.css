@@ -1,0 +1,4 @@
+.home-page {
+	border: 40px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+}
