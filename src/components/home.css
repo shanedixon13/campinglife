@@ -1,7 +1,21 @@
 .home-page {
 	margin-top: 3rem;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+}
+.home-page .home-small-photo {
+	display: flex;
+	width: 15rem;
+	height: 15rem;
+	border: 15px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	overflow: hidden;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.home-page .home-small-photo img {
+	width: 15rem;
 }
 .home-page .welcome-message {
 	border: 20px solid transparent;
@@ -9,4 +23,5 @@
 	background-color: tan;
 	padding: 1rem;
 	width: fit-content;
+	height: fit-content;
 }
