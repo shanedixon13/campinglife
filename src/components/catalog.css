@@ -31,7 +31,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: tan;
-	border: 40px solid transparent;
+	border: 30px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
 	flex-wrap: wrap;
 	justify-content: center;

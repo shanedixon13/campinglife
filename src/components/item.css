@@ -1,5 +1,5 @@
 .item {
-	border: 2px solid grey;
+	border: 2px solid transparent;
 	background-color: rgba(165, 42, 42, 0.603);
 	color: white;
 	width: 250px;
@@ -17,6 +17,7 @@
 .item img {
 	display: flex;
 	width: 220px;
+	border-radius: 4px;
 	margin-bottom: 0.5rem;
 }
 .btn {
