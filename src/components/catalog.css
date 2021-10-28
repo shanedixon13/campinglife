@@ -33,6 +33,7 @@ body {
 	background-color: tan;
 	border: 30px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	padding: 1rem;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 0.5rem;

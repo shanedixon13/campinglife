@@ -3,8 +3,14 @@
 }
 .cart-main {
 	display: flex;
+	width: fit-content;
 	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
 	justify-content: center;
+	border: 30px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	background-color: tan;
 }
 .cart-items {
 	border: 2px solid red;

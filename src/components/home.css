@@ -7,5 +7,6 @@
 	border: 20px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
 	background-color: tan;
+	padding: 1rem;
 	width: fit-content;
 }
