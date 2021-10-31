@@ -8,13 +8,15 @@ const Catalog = () => {
 	const [categories, setCategories] = useState([]);
 	const [itemsToDisplay, setItemsToDisplay] = useState([]);
 
-	const loadCatalog = () => {
+	const loadCatalog = async () => {
+		//must use async with await (check dataservice for reasoning)
 		let service = new DataService();
-		let catalog = service.getCatalog();
+		let catalog = await service.getCatalog(); //must use await
 		console.log("the data:", catalog);
 
 		//find the list of unique categories
-		let cats = [];
+		//**this is now done on the server side instead of client side**
+		/*let cats = [];
 		for (let i = 0; i < catalog.length; i++) {
 			let prod = catalog[i];
 
@@ -22,7 +24,9 @@ const Catalog = () => {
 			if (!cats.includes(prod.category)) {
 				cats.push(prod.category);
 			}
-		}
+		}*/
+		//get categories from the server
+		let cats = await service.getCategories();
 
 		console.log("unique cats", cats);
 		setCategories(cats);

@@ -1,0 +1,12 @@
+.product-form {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: beige;
+}
+.product-from .form-items {
+	width: fit-content;
+	justify-content: center;
+}

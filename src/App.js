@@ -8,6 +8,7 @@ import Footer from "./components/footer.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Cart from "./components/cart";
+import Admin from "./components/admin";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path="/about" exact component={About} />
 				<Route path="/catalog" exact component={Catalog} />
 				<Route path="/cart" exact component={Cart} />
+				<Route path="/admin" exact component={Admin} />
 
 				<Footer></Footer>
 			</BrowserRouter>
