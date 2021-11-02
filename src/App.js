@@ -9,21 +9,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Cart from "./components/cart";
 import Admin from "./components/admin";
+import GlobalContext from "./context/globalContext";
 
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
-				<NavBar></NavBar>
+			<GlobalContext>
+				<BrowserRouter>
+					<NavBar></NavBar>
 
-				<Route path="/" exact component={Home} />
-				<Route path="/about" exact component={About} />
-				<Route path="/catalog" exact component={Catalog} />
-				<Route path="/cart" exact component={Cart} />
-				<Route path="/admin" exact component={Admin} />
+					<Route path="/" exact component={Home} />
+					<Route path="/about" exact component={About} />
+					<Route path="/catalog" exact component={Catalog} />
+					<Route path="/cart" exact component={Cart} />
+					<Route path="/admin" exact component={Admin} />
 
-				<Footer></Footer>
-			</BrowserRouter>
+					<Footer></Footer>
+				</BrowserRouter>
+			</GlobalContext>
 		</div>
 	);
 }

@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import QuantityPicker from "./quantityPicker";
+import StoreContext from "../context/storeContext";
 import "./item.css";
 const Item = (props) => {
 	const [quantity, setQuantity] = useState(props.data.minimum || 1);
-
+	const addProd = useContext(StoreContext).addProductToCart;
 	const addToCart = () => {
-		console.log("add to cart");
+		let prodForCart = {
+			...props.data,
+			quantity: quantity,
+		};
+		addProd(prodForCart);
 	};
 
 	const onQuantityChange = (quantity) => {

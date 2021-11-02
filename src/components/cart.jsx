@@ -1,11 +1,18 @@
+import StoreContext from "../context/storeContext";
+import { useContext } from "react";
 import "./cart.css";
+import CartItem from "./cartItem";
 
 const Cart = () => {
+	const prodsInCart = useContext(StoreContext).cart;
 	return (
 		<div className="cart-page">
-			<h1>Ready to Checkout?</h1>
 			<div className="cart-main">
-				<div className="cart-items"></div>
+				<div className="cart-items">
+					{prodsInCart.map((p) => (
+						<CartItem data={p}></CartItem>
+					))}
+				</div>
 				<div className="cart-checkout">
 					<div className="cart-info">
 						<h3>Your Total:</h3>

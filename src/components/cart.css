@@ -4,6 +4,7 @@
 .cart-main {
 	display: flex;
 	width: fit-content;
+	height: fit-content;
 	margin-top: 3rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -13,14 +14,18 @@
 	background-color: tan;
 }
 .cart-items {
-	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
 	width: 600px;
-	height: 500px;
+	height: fit-content;
 }
 .cart-checkout {
+	margin-top: 1rem;
+	padding-bottom: 1rem;
 	border: 2px solid red;
 	width: 600px;
-	height: 500px;
+	height: fit-content;
 }
 .coupon-form {
 	display: flex;
