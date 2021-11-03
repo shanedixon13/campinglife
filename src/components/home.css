@@ -4,24 +4,38 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.home-page .home-small-photo {
+.home-page .home-side-photo {
 	display: flex;
-	width: 15rem;
-	height: 15rem;
+	flex-direction: column;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0;
+}
+.home-page .home-side-photo img {
+	width: 20rem;
+	height: fit-content;
+	margin-bottom: 2rem;
 	border: 15px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
 	overflow: hidden;
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-.home-page .home-small-photo img {
-	width: 15rem;
 }
 .home-page .welcome-message {
 	border: 20px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
 	background-color: tan;
 	padding: 1rem;
-	width: fit-content;
+	width: 50rem;
 	height: fit-content;
+}
+.home-page .middle-home {
+	height: fit-content;
+	justify-content: center;
+	width: 50rem;
+	overflow: hidden;
+}
+.middle-home img {
+	width: 50rem;
+	border: 15px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	margin-top: 2rem;
 }
