@@ -29,12 +29,13 @@ const Item = (props) => {
 			</div>
 			<h5>{props.data.title || "No Product Name"}</h5>
 			<label className="price">${props.data.price.toFixed(2)}</label>
-			<label className="total">${getTotal()}</label>
 			<div className="controls">
+				<label className="total">${getTotal()}</label>
 				<QuantityPicker
 					minimum={props.data.minimum || 1}
 					onChange={onQuantityChange}
 				></QuantityPicker>
+
 				<button onClick={addToCart} className="btn btn-sm btn-dark">
 					Add to Cart
 				</button>
