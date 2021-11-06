@@ -48,11 +48,10 @@ function NavBar() {
 							</li>
 						</ul>
 						<form className="d-flex">
-							<Link className="btn btn-outline-light" to="/cart">
-								<span className="badge bg-primary me-2">
-									{cart.length}
+							<Link className="cart-btn" to="/cart">
+								<span className="badge bg-secondary me-2">
+									Cart: {cart.length}
 								</span>
-								View Cart
 							</Link>
 						</form>
 					</div>

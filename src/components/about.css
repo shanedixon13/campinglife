@@ -4,9 +4,39 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.about-page .about-side-photo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0;
+}
+.about-page .about-side-photo img {
+	width: 20rem;
+	height: fit-content;
+	margin-bottom: 3.11rem;
+	border: 15px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	overflow: hidden;
+}
 .about-page .middle-about {
 	height: fit-content;
 	justify-content: center;
 	width: 50rem;
 	overflow: hidden;
+}
+.about-page .about-message {
+	border: 20px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	background-color: tan;
+	padding: 1rem;
+	width: 50rem;
+	height: fit-content;
+	margin-bottom: 2rem;
+}
+.middle-about img {
+	width: 50rem;
+	border: 15px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	margin-bottom: 2rem;
 }

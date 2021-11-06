@@ -9,7 +9,6 @@ const CartItem = (props) => {
 			</div>
 			<div className="item-info">
 				<h4>{props.data.title}</h4>
-				<label>{props.data.category}</label>
 			</div>
 			<div className="price-info">
 				<label>Price: ${props.data.price}</label>

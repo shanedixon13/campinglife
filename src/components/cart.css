@@ -23,7 +23,7 @@
 .cart-checkout {
 	margin-top: 1rem;
 	padding-bottom: 1rem;
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	width: 600px;
 	height: fit-content;
 }

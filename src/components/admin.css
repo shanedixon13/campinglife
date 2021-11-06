@@ -1,12 +1,18 @@
 .product-form {
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
+	width: 25rem;
+	height: fit-content;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: beige;
+	border: 30px solid transparent;
+	border-image: url("./css_backgrounds/border-frame.jpg") 50;
+	background-color: tan;
 }
-.product-from .form-items {
-	width: fit-content;
-	justify-content: center;
+.product-form .form-items {
+	display: flex;
+
+	justify-content: right;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
