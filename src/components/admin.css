@@ -1,15 +1,28 @@
-.product-form {
+.admin-page {
+	display: flex;
+	flex-direction: column;
+}
+.admin-page .forms {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.product-form,
+.coupon-form {
 	display: flex;
 	flex-direction: column;
 	width: 25rem;
 	height: fit-content;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1rem;
 	border: 30px solid transparent;
 	border-image: url("./css_backgrounds/border-frame.jpg") 50;
 	background-color: tan;
 }
-.product-form .form-items {
+.product-form .form-items,
+.coupon-form .form-items {
 	display: flex;
 
 	justify-content: right;

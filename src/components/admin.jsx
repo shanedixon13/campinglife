@@ -28,68 +28,88 @@ const Admin = () => {
 		//call service.saveProduct(product)
 		service.saveProduct(product);
 	};
+	const couponSave = () => {
+		console.log("Coupon Saved");
+	};
 
 	return (
 		<div className="admin-page">
 			<h1>Admin</h1>
-			<div className="product-form">
-				<div className="form-items">
-					<label>Title: </label>
-					<input
-						name="title"
-						onChange={textChange}
-						type="text"
-						placeholder="Title"
-					/>
-				</div>
+			<div className="forms">
+				<div className="product-form">
+					<h3>Register New Product</h3>
+					<div className="form-items">
+						<label>Title: </label>
+						<input
+							name="title"
+							onChange={textChange}
+							type="text"
+							placeholder="Title"
+						/>
+					</div>
 
-				<div className="form-items">
-					<label>Price: </label>
-					<input
-						name="price"
-						onChange={textChange}
-						type="number"
-						placeholder="4.99"
-					/>
-				</div>
+					<div className="form-items">
+						<label>Price: </label>
+						<input
+							name="price"
+							onChange={textChange}
+							type="number"
+							placeholder="4.99"
+						/>
+					</div>
 
-				<div className="form-items">
-					<label>Stock: </label>
-					<input
-						name="stock"
-						onChange={textChange}
-						type="number"
-						placeholder="25"
-					/>
-				</div>
+					<div className="form-items">
+						<label>Stock: </label>
+						<input
+							name="stock"
+							onChange={textChange}
+							type="number"
+							placeholder="25"
+						/>
+					</div>
 
-				<div className="form-items">
-					<label>Image Name: </label>
-					<input name="image" onChange={textChange} type="text" />
-				</div>
+					<div className="form-items">
+						<label>Image Name: </label>
+						<input name="image" onChange={textChange} type="text" />
+					</div>
 
-				<div className="form-items">
-					<label>Minumum Purchase: </label>
-					<input
-						name="minimum"
-						onChange={textChange}
-						type="number"
-						placeholder="5"
-					/>
-				</div>
+					<div className="form-items">
+						<label>Minumum Purchase: </label>
+						<input
+							name="minimum"
+							onChange={textChange}
+							type="number"
+							placeholder="5"
+						/>
+					</div>
 
-				<div className="form-items">
-					<label>Category: </label>
-					<input
-						name="category"
-						onChange={textChange}
-						type="text"
-						placeholder="Hiking"
-					/>
+					<div className="form-items">
+						<label>Category: </label>
+						<input
+							name="category"
+							onChange={textChange}
+							type="text"
+							placeholder="Hiking"
+						/>
+					</div>
+					<button onClick={handleSave} className="btn btn-primary">
+						Register Product
+					</button>
 				</div>
-				<button onClick={handleSave} className="btn btn-primary">
-					Register Product
-				</button>
+				<div className="coupon-form">
+					<h3>Register New Coupon</h3>
+					<div className="form-items">
+						<label>Code</label>
+						<input type="text" />
+					</div>
+					<div className="form-items">
+						<label>Discount</label>
+						<input type="number" />
+					</div>
+					<button onClick={couponSave} className="btn btn-primary">
+						Register Coupon
+					</button>
+				</div>
 			</div>
 		</div>
 	);
