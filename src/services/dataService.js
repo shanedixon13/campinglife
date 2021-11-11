@@ -58,6 +58,7 @@ var catalog = [
 ];
 
 class DataService {
+	serverURL = "http://127.0.0.1:5000"; //typically used to make deployment easier via changing one line
 	async getCatalog() {
 		//must add async to use await (async/await technique)
 		//call the server to get the catalog
@@ -66,6 +67,11 @@ class DataService {
 		return res.data; //= an array of objects
 		//return mock data(temporal)
 		//return catalog;
+	}
+
+	async submitOrder(order) {
+		let res = await axios.post("http://127.0.0.1:5000/api/order", order);
+		console.log("Result of saving order: ", res.data);
 	}
 
 	//get categories
